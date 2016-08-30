@@ -9,6 +9,10 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *HelloLabel;
+@property (strong, nonatomic) IBOutlet UITextField *CustomeTextField;
+@property (strong, nonatomic) IBOutlet UIButton *ClickButton;
+@property (strong, nonatomic) IBOutlet UIButton *PressIt;
 
 @end
 
@@ -25,5 +29,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)ButtonClickCounter:(id)sender {
+    
+    NSString *customText = self.CustomeTextField.text;
+    self.HelloLabel.text = customText;
+    
+
+}
 
 @end
