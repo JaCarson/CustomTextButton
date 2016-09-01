@@ -51,4 +51,11 @@
     
 }
 
+- (IBAction)textFieldClear:(id)sender {
+    
+
+    self.HelloLabel.text = @"";
+    self.labelOne.text = @"";
+    
+}
 @end
