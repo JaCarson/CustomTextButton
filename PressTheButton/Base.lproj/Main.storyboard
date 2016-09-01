@@ -18,54 +18,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text=".Press It." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQh-2H-Nvf">
-                                <frame key="frameInset" minX="154" minY="40" width="67" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="blelelele" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fR1-2u-sfR">
+                                <frame key="frameInset" minX="66" minY="289" width="63" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qn4-Xb-zRw">
-                                <frame key="frameInset" minX="139" minY="255" width="97" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AE5-bv-Xr4">
+                                <frame key="frameInset" minX="76" minY="356" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="buttonOne">
+                                    <color key="titleColor" red="0.6277765528" green="0.1428362738" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonOneAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yES-yw-teP"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qn4-Xb-zRw">
+                                <frame key="frameInset" minX="191.5" minY="318" width="167.5" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zk-BT-tql">
-                                <frame key="frameInset" minX="175" minY="307" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=".Press It." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZQh-2H-Nvf">
+                                <frame key="frameInset" minX="242" minY="289" width="67" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8zk-BT-tql">
+                                <frame key="frameInset" minX="242" minY="356" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="ButtonTwo">
+                                    <color key="titleColor" red="1" green="0.081942766769999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="ButtonClickCounter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ouZ-ss-DYT"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="8zk-BT-tql" firstAttribute="bottom" secondItem="ZQh-2H-Nvf" secondAttribute="bottom" id="57I-mK-omf"/>
-                            <constraint firstItem="8zk-BT-tql" firstAttribute="centerY" secondItem="ZQh-2H-Nvf" secondAttribute="centerY" id="5cy-pL-eis"/>
-                            <constraint firstItem="8zk-BT-tql" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6qp-zp-GhN"/>
-                            <constraint firstItem="Qn4-Xb-zRw" firstAttribute="bottom" secondItem="ZQh-2H-Nvf" secondAttribute="bottom" id="8uP-jL-cca"/>
-                            <constraint firstItem="ZQh-2H-Nvf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="D0A-gL-feG"/>
-                            <constraint firstItem="Qn4-Xb-zRw" firstAttribute="centerX" secondItem="ZQh-2H-Nvf" secondAttribute="centerX" id="D6R-o9-qCf"/>
-                            <constraint firstItem="8zk-BT-tql" firstAttribute="top" secondItem="ZQh-2H-Nvf" secondAttribute="top" id="H3A-Ak-pLn"/>
-                            <constraint firstItem="8zk-BT-tql" firstAttribute="leading" secondItem="ZQh-2H-Nvf" secondAttribute="leading" id="OWX-Bg-oac"/>
-                            <constraint firstItem="Qn4-Xb-zRw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Q0B-6i-5VB"/>
-                            <constraint firstItem="8zk-BT-tql" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UQ3-vh-obb"/>
-                            <constraint firstItem="8zk-BT-tql" firstAttribute="centerX" secondItem="ZQh-2H-Nvf" secondAttribute="centerX" id="Uo0-xQ-wlX"/>
-                            <constraint firstItem="Qn4-Xb-zRw" firstAttribute="baseline" secondItem="ZQh-2H-Nvf" secondAttribute="baseline" id="X9e-ep-ygK"/>
-                            <constraint firstItem="Qn4-Xb-zRw" firstAttribute="leading" secondItem="ZQh-2H-Nvf" secondAttribute="leading" id="aKz-0L-AW9"/>
-                            <constraint firstItem="8zk-BT-tql" firstAttribute="baseline" secondItem="ZQh-2H-Nvf" secondAttribute="baseline" id="c24-1E-ifV"/>
-                            <constraint firstItem="Qn4-Xb-zRw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fRY-rX-9Wq"/>
-                            <constraint firstItem="Qn4-Xb-zRw" firstAttribute="centerY" secondItem="ZQh-2H-Nvf" secondAttribute="centerY" id="gby-XC-UIu"/>
-                            <constraint firstItem="8zk-BT-tql" firstAttribute="trailing" secondItem="ZQh-2H-Nvf" secondAttribute="trailing" id="mT4-N5-dLZ"/>
-                            <constraint firstItem="Qn4-Xb-zRw" firstAttribute="trailing" secondItem="ZQh-2H-Nvf" secondAttribute="trailing" id="nna-QJ-5bk"/>
-                            <constraint firstItem="ZQh-2H-Nvf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tX0-qH-sIl"/>
-                            <constraint firstItem="Qn4-Xb-zRw" firstAttribute="top" secondItem="ZQh-2H-Nvf" secondAttribute="top" id="uJx-MF-syi"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="ClickButton" destination="8zk-BT-tql" id="yfS-Xg-7Py"/>
                         <outlet property="CustomeTextField" destination="Qn4-Xb-zRw" id="jqR-p4-7dU"/>
                         <outlet property="HelloLabel" destination="ZQh-2H-Nvf" id="YVE-5T-vyW"/>
+                        <outlet property="PressIt" destination="AE5-bv-Xr4" id="fNJ-Nm-RDJ"/>
+                        <outlet property="labelOne" destination="fR1-2u-sfR" id="F6x-NX-JvN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

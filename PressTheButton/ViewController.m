@@ -13,6 +13,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *CustomeTextField;
 @property (strong, nonatomic) IBOutlet UIButton *ClickButton;
 @property (strong, nonatomic) IBOutlet UIButton *PressIt;
+@property (strong, nonatomic) IBOutlet UILabel *labelOne;
 
 @end
 
@@ -30,11 +31,24 @@
 }
 
 - (IBAction)ButtonClickCounter:(id)sender {
+
+    
     
     NSString *customText = self.CustomeTextField.text;
     self.HelloLabel.text = customText;
     
 
+}
+
+- (IBAction)buttonOneAction:(id)sender {
+    
+    
+    NSString *customText = self.CustomeTextField.text;
+    self.labelOne.text = customText;
+    
+
+    
+    
 }
 
 @end
